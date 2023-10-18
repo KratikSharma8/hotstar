@@ -1,34 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Kratik Sharma - SYMCA</title>
+	<title>THE CODE REVIEW</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://fonts.googleapis.com/css?family=Amaranth:700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
-    <div style="background-color: #007bff; color: #fff; text-align: center; padding: 20px;">
-        <h1 style="font-size: 36px;">Kratik Sharma</h1>
-        <p style="font-size: 24px;">Class: SYMCA</p>
-    </div>
-    <div style="padding: 20px;">
-        <h2 style="font-size: 28px; color: #007bff;">About Me</h2>
-        <p style="font-size: 18px;">I'm a passionate SYMCA student with a keen interest in computer science, technology, and software development. I love to explore new programming languages, frameworks, and build innovative solutions. In my free time, I enjoy coding, gaming, and reading tech blogs.</p>
-        <h2 style="font-size: 28px; color: #007bff;">Contact Information</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 10px;">
-                <strong style="font-size: 20px;">Email:</strong> <a href="mailto:kratik@example.com" style="font-size: 18px; color: #007bff; text-decoration: none;">kratik@example.com</a>
-            </li>
-            <li style="margin-bottom: 10px;">
-                <strong style="font-size: 20px;">Phone:</strong> <span style="font-size: 18px;">(123) 456-7890</span>
-            </li>
-        </ul>
-        <h2 style="font-size: 28px; color: #007bff;">Social Media</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li style="margin-bottom: 10px;">
-                <strong style="font-size: 20px;">LinkedIn:</strong> <a href="https://www.linkedin.com/in/kratiksharma" style="font-size: 18px; color: #007bff; text-decoration: none;" target="_blank">linkedin.com/in/kratiksharma</a>
-            </li>
-            <li style="margin-bottom: 10px;">
-                <strong style="font-size: 20px;">GitHub:</strong> <a href="https://github.com/kratik" style="font-size: 18px; color: #007bff; text-decoration: none;" target="_blank">github.com/kratik</a>
-            </li>
-        </ul>
-    </div>
+
+<body>
+<div class="header">
+<h1>THE CODE REVIEW</h1>
+</div>
+<div class="container">
+
+<h2>Sign up for our Newsletter</h2>
+<p class="para1">Get the latest news on how your code is doing right in your inbox</p>
+
+<div class="border-up"></div>
+<div class="border-down"></div>
+<form action="index.html" method ="post">
+<fieldset>
+<legend class="contact">Contact Information</legend>
+<div class="row">
+<label for="name" >Full Name</label>
+<div class="tf">
+	<input type ="text" id ="name" name="user_name" placeholder="Required" required><br/>
+</div>
+</div>
+<div class="row">
+<label for="email" >Email Address</label>
+<div class="tf">
+	<input type ="email" id ="email" name="user_mail"  placeholder="Required" required><br/>
+</div>
+</div>
+<div class="row">
+<label for="number" >Phone Number</label>
+<div class="tf">
+	<input type ="tel" id ="number" name="user_number" placeholder="999999999"><br/>
+</div>
+</div>
+<div class="row">
+<label for="address" >Street Address</label>
+<div class="tf"> 
+	<input type ="text" id ="address" name="user_address" placeholder="123 Fake Street"><br/>
+</div>
+</div>
+<div class="row">
+<label for="city" >City</label>
+<div class="tf">
+<input type ="text" id ="city" name="user_city" placeholder="Pune"><br/>
+</div>
+</div>
+<div class="row">
+<label for="state" >State</label>
+<div class="tf">
+	<select id ="state"><br><br/>
+  <option value="" disabled selected class="dis">Choose State</option>
+  <option value="Maharashtra">Maharashtra</option>
+  <option value="Gujarat">Gujarat</option>
+  <option value="Madhaya Pradesh">Madhaya Pradesh</option>
+  <option value="Punjab">Punjab</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Andhara Pradesh">Andhara Pradesh </option>
+  <option value="Uttarakhand">Uttarakhand</option>
+  <option value="Meghalaya">Meghalaya</option>
+   <option value="Sikkim">Sikkim</option>
+  <option value="Tamil Nadu">Tamil Nadu</option>
+  <option value="Kerela">Kerela</option>
+</select>
+</div>
+</div>
+<div class="row">
+<label for="zip" >Zip Code</label><br><br/>
+<div class="tf">
+<input type ="number" id ="zip" name="zip_code" placeholder="511098"><br><br/>
+</div>
+</div>
+</fieldset>
+<div class="border_3"></div>
+<fieldset>
+<legend class="newsletter">Newsletter</legend>
+<p> Select the newsletter you would like to receive.</p>
+<input type="checkbox" name="html" value="HTML"><label class="checkbox-label"> HTML</label><br><br/>
+<input type="checkbox" name="css" value="CSS"><label class="checkbox-label"> CSS News</label><br><br/>
+<input type="checkbox" name="javascript" value="Javascript"><label class="checkbox-label"> Javascript News</label><br></br>
+<p>Newsletter Format</p>
+<input type="radio" name="radio" value="Html_format"><label> HTML</label><br></br/>
+<input type="radio" name="radio" value="Plain_format"><label> Plain text</label><br><br/>
+<p>Other topics you would like to hear about</p>
+<textarea class="area" rows="3"></textarea>
+</fieldset>
+<button type="submit">Sign Up </button>
+<p class="footer">&copy; Copyright The Code Review</p>
+</form>
+</div>
 </body>
 </html>
