@@ -2,7 +2,7 @@ const express = require("express");
 var path =  require('path')
 const app = express();
 
-app.use(express.static(path.join(__dirname,'index.html')));
+app.use(express.static("public"));
 
 console.log("executing...");
 app.listen(3000, () => {
